@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #F7F8FB;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #141414;
+  user-select: none;
+}
+
+.board {
+  padding: 40px;
+}
+
+.areas {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+.area-box {
+  width: 250px;
+  padding: 20px;
+  background-color: #FFFEFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.2s;
+}
+
+.delete-completed-btn {
+  margin-top: 16px;
+  background-color: #EA4335;
+  color: #FFFEFF;
+  border: none;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
+}
+
+#add-task-input {
+  padding: 8px 0 8px 8px;
+  width: 250px;
+  background-color: #FFFEFF;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+#add-task button {
+  padding: 8px;
+  border: none;
+  background-color: #3D95D1;
+  color: #F7F8FB;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#add-task button:hover {
+  background-color: #348bc5;
+}
+
+.task {
+  padding: 8px;
+  margin-top: 16px;
+  background-color: #3D95D1;
+  color: #FFFEFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.2s;
+  cursor: move;
+}
+
+.task.is-dragging {
+  scale: 1.05;
+  color: #F7F8FB;
+  background-color: #1E2F40;
+}
+
+.drag-over {
+  scale: 0.95;
+}

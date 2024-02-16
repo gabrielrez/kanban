@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Kanban</title>
+</head>
+
+<body>
+  <div class="board">
+    <form id="add-task">
+      <input type="text" id="add-task-input" placeholder="Adicionar Tarefa">
+      <button type="submit">Adicionar +</button>
+    </form>
+    <button class="delete-completed-btn">Excluir cards concluídos</button>
+    <div class="areas">
+      <div class="area-box" id="to-do-box">
+        <h3 class="heading">A fazer</h3>
+      </div>
+      <div class="area-box" id="doing-box">
+        <h3 class="heading">Em andamento</h3>
+      </div>
+      <div class="area-box" id="done-box">
+        <h3 class="heading">Concluído</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
